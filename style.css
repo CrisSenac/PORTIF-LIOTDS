@@ -1,0 +1,318 @@
+/*padronização para TODOS os elementos*/
+* {
+    color: #ffffff; /*cor da letra(fonte)*/
+    font-family: 'Segoe UI', 'Roboto';
+}
+
+/*estilizando o body*/
+body {
+    background-color: #1a0c2b; /*cor de fundo*/
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.body-home {
+    justify-content: center;
+}
+
+.titulo-principal {
+    font-size: 100px;
+}
+
+.titulo-principal span{
+    color: #F34DA9;
+}
+
+.container-home {
+    display: flex; /*permite movimentar os elementos*/
+    align-items: center; /*centraliza verticalmente*/
+    justify-content: space-between;
+}
+
+.container-home img {
+    width: 20%; /*largura*/
+    height: 20%; /*altura*/
+}
+
+.titulo-secundario{
+    font-size: 35px;
+}
+
+.menu{
+    margin-top: 50px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 25px;
+    border-left: #F34DA9 3px solid;
+    padding: 0 15px;
+}
+
+.menu a:first-child{
+    border: none;
+    padding-left: 0;
+}
+
+.header-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-header{
+    display: flex;
+    align-items: center;
+}
+
+.title-header img {
+    width: 10%;
+    height: 30%;
+    margin-right: 15px;
+}
+
+.title-header h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 19px;
+    text-align: justify;
+}
+
+.main-info {
+    margin: 0 70px;
+}
+
+.link-icon{
+    font-size: 40px;
+}
+
+.link-icon i:hover{
+    color: #F34DA9;
+}
+
+.card-projeto {
+    background-color: #a013dd21;
+    border: 4px  #9F13DD solid;
+    padding: 0 15px;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.card-projeto h3 {
+    border-bottom: 1px  #F34DA9 solid;
+    padding: 20px 0;
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-projeto {
+    display: flex;
+    justify-content: space-between;
+}
+.main-habilidade{
+    display: flex;
+    justify-content: space-around;
+}
+.div-habilidades{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-habilidades img{
+    width: 50%;
+}
+.main-contatos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div1-contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1-contatos h2{
+    font-size: 30px;
+}
+
+.div1-contatos a{
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.div1-contatos a:hover{
+    color: #F34DA9;
+}
+
+.icon-contatos, .fa-brands, .fab{
+    font-size: 40px;
+    color: #F34DA9;
+    margin-right: 5px;
+}
+
+.icon-contatos {
+    margin: 20px 0;
+}
+
+.div2-contatos {
+    width: 50%;
+    max-width: 400px;
+}
+
+.div2-contatos h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.input-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-grupo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.input-grupo input, .input-grupo textarea {
+    padding: 10px;
+    border: 1px #ccc;
+    border-radius: 5px;
+    color: #1a0c2b;
+    box-sizing: border-box;
+}
+
+.envia-form {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #F34DA9;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.envia-form:hover {
+    background-color: #f34da987;
+}
+
+
+/* RESPONSIVIDADE*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .titulo-principal {
+        font-size: 30px;
+        text-align: center;
+    }
+    .container-home {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .container-home img{
+        width: 50%;
+    }
+    .titulo-secundario{
+        font-size: 15px;
+        text-align: center;
+    }
+    .menu a{
+        font-size: 15px;
+        border-bottom: #F34DA9 1px solid;
+        border-left: none;
+        padding: 0;
+        margin: 3px 0;
+    }
+    .menu a:first-child{
+        border-bottom: #F34DA9 1px solid;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-header h1{
+        font-size: 25px;
+    }
+    .title-header img{
+        width: 15%;
+        margin-right: 5px;
+    }
+    .link-icon{
+        font-size: 20px;
+    }
+    body {
+        padding: 0 20px;
+    }
+    .main-info{
+        margin: 0 10px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .main-projeto{
+        flex-direction: column;
+    }
+    .card-projeto{
+        width: auto;
+        margin-bottom: 15px;
+    }
+    .card-projeto h3{
+        font-size: 20px;
+        padding: 5px 0;
+    }
+    .main-habilidade{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .div-habilidades{
+        width: 50%;
+    }
+    .main-contatos{
+        flex-direction: column-reverse;
+    }
+    .div2-contatos {
+        width: 100%;
+    }
+    .div1-contatos h2, .div2-contatos h2 {
+        font-size: 20px;
+    }
+    .input-grupo {
+        font-size: 14px;
+    }
+    .input-grupo input, .input-grupo textarea, .envia-form {
+        padding: 5px;
+    }
+    .icon-contatos {
+        margin: 0;
+    }
+    .div1-contatos a {
+        font-size: 16px;
+    }
+    .icon-contatos, .fa-brands, .fab {
+        font-size: 30px;
+    }
+    .div1-contatos h2 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
