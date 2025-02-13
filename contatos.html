@@ -21,7 +21,7 @@
         <div class="div1-contatos">
             <h2>Minhas redes:</h2>
             <div class="icon-contatos">
-                <a href="https://github.com/ProfaIngrid" target="_blank">
+                <a href="https://github.com/CrisSenac" target="_blank">
                     <span class="icon-contatos">
                         <i class="fa-brands fa-github"></i>
                     </span>
@@ -42,23 +42,25 @@
             <form>
                 <div class="input-grupo">
                     <label>Nome:</label>
-                    <input type="text">
+                    <input type="text" id="nome">
                 </div>
                 <div class="input-grupo">
                     <label>Email:</label>
-                    <input type="email">
+                    <input type="email" id="email">
                 </div>
                 <div class="input-grupo">
                     <label>Telefone:</label>
-                    <input type="tel"/>
+                    <input type="tel" id="telefone"/>
                 </div>
                 <div class="input-grupo">
                     <label>Mensagem:</label>
-                    <textarea></textarea>
+                    <textarea id="mensagem"></textarea>
                 </div>
-                <button class="envia-form">Enviar</button>
+                <button class="envia-form" onclick="verificarCampos(event);">Enviar</button>
+                <p id="mensagemObt"></p>
             </form>
         </div>
     </main>
 </body>
+<script src="./script.js"></script>
 </html>
